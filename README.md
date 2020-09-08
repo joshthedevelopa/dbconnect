@@ -1,2 +1,2 @@
 # dbconnect
-An upcoming PHP library that uses PDO to simplify query codes
+An upcoming PHP library that uses PDO to simplify query codes (Coming Soon)
