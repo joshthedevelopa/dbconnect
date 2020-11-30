@@ -64,8 +64,7 @@ class DBConnect {
                 }
             }
         }
-        
-       
+
         $sql = "$action $table" . (($_extend == "") ? "" : " WHERE $_extend");
         return $this->query($sql, $values);        
     }
@@ -100,7 +99,7 @@ class DBConnect {
         $_string = '';
 
         for ($i = 1; $i <= count($fields); $i++) {
-            $_string .= $i < count($fields) ? ${array_keys($fields)[0]} . " = ?, " : array_keys($fields)[0] . " = ?";
+            $_string .= $i < count($fields) ? array_keys($fields)[0] . " = ?, " : array_keys($fields)[0] . " = ?";
         }
 
         $values = array_values($fields);
