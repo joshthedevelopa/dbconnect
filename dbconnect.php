@@ -64,6 +64,7 @@ class DBConnect {
                 }
             }
         }
+        
        
         $sql = "$action $table" . (($_extend == "") ? "" : " WHERE $_extend");
         return $this->query($sql, $values);        
